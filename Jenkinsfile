@@ -12,7 +12,7 @@ pipeline{
                 script{
                     checkout scm
                     dir('user')
-                    sh 'mvn clean package'
+                    sh 'mvn test'
                 }
             }
         }
