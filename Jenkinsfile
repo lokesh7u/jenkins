@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage('git checkout'){
             steps{
+                branch 'master'
                 git 'https://github.com/instana/robot-shop.git'
             }
         }
